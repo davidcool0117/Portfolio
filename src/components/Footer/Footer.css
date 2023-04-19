@@ -12,15 +12,18 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 4rem;
-  gap: 4rem;
+  margin-top: 5rem;
+  gap: 2rem;
   color: white;
 }
 .f-icons {
   display: flex;
   gap: 2rem;
 }
-
+.copyright{
+  font-size: 16px;
+  text-align: center;
+}
 @media screen and (max-width: 480px){
   .f-content{
     transform: scale(.5);

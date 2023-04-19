@@ -1,0 +1,11 @@
+Model Information:
+* title:	Gift box
+* source:	https://sketchfab.com/3d-models/gift-box-95719378a4dd49cebe0fbb45713b33f0
+* author:	Kyn (https://sketchfab.com/Kyn91)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Gift box" (https://sketchfab.com/3d-models/gift-box-95719378a4dd49cebe0fbb45713b33f0) by Kyn (https://sketchfab.com/Kyn91) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

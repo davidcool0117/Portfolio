@@ -38,11 +38,18 @@
   color: var(--orange);
   cursor: pointer;
 }
+.n-list > ul > li > a{
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
 
 .n-button {
   flex: 2;
 }
 
+.logo{
+  cursor: pointer;
+}
 @media screen and (max-width: 480px) {
   .n-list {
     display: none;
