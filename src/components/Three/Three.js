@@ -26,8 +26,9 @@ const Model = () => {
         <primitive
             object={gltf.scene}
             scale={1.3}
+            position={[-center.x, -center.y - 0.5, -center.z]}
             rotation={[-Math.PI / 18 + 0.7, Math.PI / 4, 0]}
-            position={[-center.x, -center.y - 0.2, -center.z]}
+            pivot={[center.x, center.y, center.z]}
         />
 
     );
