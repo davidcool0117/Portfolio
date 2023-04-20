@@ -32,11 +32,9 @@ const Contact = () => {
 
   return (
     <div className="contact-form" id="contact">
-      {/* left side copy and paste from work section */}
       <div className="w-left">
         <div className="awesome">
-          {/* darkMode */}
-          <span style={{ color: darkMode ? 'white' : '' }}>TO</span>
+          <span>TO</span>
           <span>CONTACT</span>
           <div
             className="blur s-blur1"
@@ -45,7 +43,6 @@ const Contact = () => {
         </div>
       <Three />
       </div>
-      {/* right side form */}
       <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="user_name" className="user" placeholder="성명" />

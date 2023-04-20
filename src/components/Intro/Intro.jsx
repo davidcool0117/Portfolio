@@ -32,12 +32,12 @@ const Intro = () => {
           <span></span>
         </div>
         <div className="mainbtn">
-          <Link to="contact" smooth={true} spy={true}>
+          <a href="https://github.com/davidcool0117" target="_blank">
             <button className="button i-button">Git</button>
-          </Link>
-          <Link to="contact" smooth={true} spy={true}>
+          </a>
+          <a href="/">
             <button className="button i-button">이력서</button>
-          </Link>
+          </a>
         </div>
         <div className="i-icons">
           <img src={Github} alt="" />
@@ -48,7 +48,7 @@ const Intro = () => {
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
         <img src={profile_img_hf1} alt="" />
-        <motion.img initial={{ left: "-36%" }} whileInView={{ left: "-24%" }} transition={transition} src={gift1} alt="" />
+        <motion.img initial={{ left: "-36%" }} whileInView={{ left: "-20%" }} transition={transition} src={gift1} alt="" />
 
         <motion.div initial={{ top: "-4%", left: "74%" }} whileInView={{ left: "68%" }} transition={transition} className="floating-div" animate>
           <FloatinDiv img1={reactIcon} text1="Frontend" text2="Developer" />
