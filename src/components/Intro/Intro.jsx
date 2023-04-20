@@ -8,7 +8,6 @@ import JsIcon from "../../img/JsIcon.png";
 import reactIcon from "../../img/reactIcon.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
-import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
@@ -23,10 +22,8 @@ const Intro = () => {
 
   return (
     <div className="Intro" id="Intro">
-      {/* left name side */}
       <div className="i-left">
         <div className="i-name">
-          {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>안녕하세요!</span>
           <span>
             선물같은 코더 <br />
@@ -53,12 +50,12 @@ const Intro = () => {
         <img src={profile_img_hf1} alt="" />
         <motion.img initial={{ left: "-36%" }} whileInView={{ left: "-24%" }} transition={transition} src={gift1} alt="" />
 
-        <motion.div initial={{ top: "-4%", left: "74%" }} whileInView={{ left: "68%" }} transition={transition} className="floating-div">
-          <FloatinDiv img={reactIcon} text1="Frontend" text2="Developer" />
+        <motion.div initial={{ top: "-4%", left: "74%" }} whileInView={{ left: "68%" }} transition={transition} className="floating-div" animate>
+          <FloatinDiv img1={reactIcon} text1="Frontend" text2="Developer" />
         </motion.div>
 
         <motion.div initial={{ left: "9rem", top: "18rem" }} whileInView={{ left: "0rem" }} transition={transition} className="floating-div">
-          <FloatinDiv img={JsIcon} text1="Frontend" text2="Developer" />
+          <FloatinDiv img1={JsIcon} text1="Frontend" text2="Developer" />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>

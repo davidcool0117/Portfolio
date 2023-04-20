@@ -40,7 +40,7 @@ const navbar = () => {
       </div>
       <div className="n-right">
         <Link to="contact" spy={true} smooth={true}>
-          <button className="button n-button">Contact</button>
+          <button className="button n-button">CONTACT</button>
         </Link>
       </div>
     </div>

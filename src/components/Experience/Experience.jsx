@@ -1,21 +1,67 @@
-import React, { useContext } from "react";
-import { themeContext } from "../../Context";
-import { Progress } from "antd";
+import React from "react";
+import { CircleProgress } from 'react-gradient-progress'
+import SkillBar from 'react-skillbars';
+
 import "./Experience.css";
 const Experience = () => {
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
+  const skills = [
+    {
+      type: 'HTML',
+      level: 100,
+      color: {
+        bar: '#FAD6A6',
+        title: { text: '#fff' }
+      }
+    },
+    {
+      type: 'CSS',
+      level: 85,
+      color: {
+        bar: '#FAD6A6',
+        title: { text: '#fff' }
+      }
+    },
+    {
+      type: 'Javascript',
+      level: 75, color: {
+        bar: '#FAD6A6',
+        title: { text: '#fff' }
+      }
+    },
+    {
+      type: 'React',
+      level: 70, color: {
+        bar: '#FAD6A6 ',
+        title: { text: '#fff' }
+      }
+    },
+    {
+      type: 'HTML',
+      level: 85,
+      color: {
+        bar: '#FAD6A6 ',
+        title: { text: '#fff' }
+      }
+    },
+    {
+      type: 'NoSQL',
+      level: 70,
+      color: {
+        bar: '#FAD6A6',
+        title: { text: '#fff' }
+      }
+    }
+  ];
 
   return (
     <div className="skills">
       <div className="experience" id="experience">
-        <span style={{ color: darkMode ? "white" : "" }}>MY</span>
+        <span>MY</span>
         <span>SKILLS</span>
       </div>
-      <Progress percent={30} />
-      <Progress percent={50} status="active" />
-      <Progress percent={30} />
-      <Progress percent={50} status="active" />
+      <div className="progress_bar">
+        <SkillBar skills={skills} />
+      </div>
     </div>
   );
 };

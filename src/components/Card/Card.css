@@ -13,6 +13,7 @@
   box-shadow: var(--boxShadow);
   border-radius: 20px;
   padding: 0px 26px 2rem 26px;
+  z-index: 1;
 }
 .card span:nth-of-type(2) {
   /* color: var(--gray); */
