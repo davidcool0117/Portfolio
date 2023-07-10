@@ -7,7 +7,7 @@ const Contact = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   const form = useRef();
-  const [done, setDone] = useState(false)
+  const [done, setDone] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -41,12 +41,22 @@ const Contact = () => {
             style={{ background: "#ABF1FF94" }}
           ></div>
         </div>
-      <Three />
+        {/* <Three /> */}
       </div>
       <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="user_name" className="user" placeholder="성명" />
-          <input type="email" name="user_email" className="user" placeholder="이메일" />
+          <input
+            type="text"
+            name="user_name"
+            className="user"
+            placeholder="성명"
+          />
+          <input
+            type="email"
+            name="user_email"
+            className="user"
+            placeholder="이메일"
+          />
           <textarea name="message" className="user" placeholder="메시지" />
           <input type="submit" value="전송" className="button" />
           <span>{done && "Thanks for Contacting me"}</span>
